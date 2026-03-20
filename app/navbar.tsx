@@ -6,6 +6,7 @@ export default function Navbar() {
       <Link href="/" className="text-xl font-bold">Charles001</Link>
       <div className="flex gap-6">
         <Link href="/posts" className="text-gray-600 hover:text-black">文章</Link>
+        <Link href="/chat" className="text-gray-600 hover:text-black">AI 对话</Link>
         <Link href="/about" className="text-gray-600 hover:text-black">关于</Link>
       </div>
     </nav>
