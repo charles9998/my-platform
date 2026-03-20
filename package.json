@@ -9,10 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.80.0",
     "@auth/core": "^0.34.3",
+    "@google/generative-ai": "^0.24.1",
     "gray-matter": "^4.0.3",
     "next": "16.2.0",
     "next-auth": "^4.24.13",
+    "openai": "^6.32.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "remark": "^15.0.1",
