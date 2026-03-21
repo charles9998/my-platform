@@ -12,7 +12,10 @@ export async function POST(request: Request) {
       parts: [{ text: m.content }],
     }))
 
-    const chat = model.startChat({ history })
+    const chat = model.startChat({
+  history,
+  systemInstruction: '你是一个专业、有深度的AI助手。回答要准确、有逻辑、有洞察力。用中文回答。',
+})
     const lastMessage = messages[messages.length - 1].content
     const result = await chat.sendMessage(lastMessage)
     const text = result.response.text()
